@@ -1,2 +1,16 @@
-# portfolio
-A personal portfolio website showcasing my projects, skills, and experience in software development. 
+#  Portfolio | My Personal Website
+
+Welcome to my personal portfolio! This repository contains my portfolio website, showcasing my projects, skills, and experiences in software development. 
+
+## 🌟 Features:
+- 🖥️ **Responsive Design** – Fully adaptable to all screen sizes.
+- 🎨 **Modern UI** – Clean and visually appealing design.
+- 💡 **Projects Showcase** – Highlights of my featured projects.
+- 📞 **Contact Section** – Easy access to my social media and email.
+
+## 🔗 Live Demo:
+[🔗 Visit My Portfolio](my-website)
+
+## 📌 Technologies Used:
+- HTML5, CSS3, JavaScript (Frontend)
+- Google Fonts (Library)
