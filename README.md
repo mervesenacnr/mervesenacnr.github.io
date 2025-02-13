@@ -9,7 +9,7 @@ Welcome to my personal portfolio! This repository contains my portfolio website,
 - 📞 **Contact Section** – Easy access to my social media and email.
 
 ## 🔗 Live Demo:
-[🔗 Visit My Portfolio]([my-website](https://mervesenacnr.github.io/))
+[🔗 Visit My Portfolio](https://mervesenacnr.github.io/)
 
 ## 📌 Technologies Used:
 - HTML5, CSS3, JavaScript (Frontend)
