@@ -1,0 +1,294 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    position: fixed;
+    left: -280px; 
+    top: -150px; 
+    width: 380px;
+    height: 50vh;
+    background-color: #e88c97e2;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 20px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #191919;
+    font-size: 18px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+
+.menu-icon {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #191919;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bottom {
+    bottom: 0;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:checked ~ .navbar {
+    transform: translateX(250px) translateY(150px);
+}
+
+#menuToggle:checked ~ label .bar {
+    background-color: white;
+}
+
+#menuToggle:checked ~ label .top {
+    transform: translateY(13px) rotate(45deg);
+}
+
+#menuToggle:checked ~ label .bottom {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+#menuToggle:checked ~ label .middle {
+    width: 0;
+}
+
+/* PAGE 1 */
+.page-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Pictures/page1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+}
+
+.about-me{
+    width: 50%;
+    height: 60%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.my-name{
+    color: white;
+    font-size: 70px;
+    font-family: "Oswald", serif;
+}
+
+.my-motto{
+    color: rgba(255, 255, 255, 0.808);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* PAGE 2 */
+.page-2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Pictures/page2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: #191919;
+    color: #efe9e4;
+    width: 300px; 
+    height: 50px; 
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-left: 180px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projects {
+    display: flex;
+    gap: 45px; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.project {
+    background-color: #e88c97;
+    width: 180px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #191919;
+    text-align: center;
+    padding: 10px;
+    transition: transform 05.s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.2);
+}
+
+.project a {
+    text-decoration: none;
+    color: #101913;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: block;
+    padding-top: 20px;
+}
+
+
+.project img {
+    padding-top: 20px;
+}
+
+/* PAGE 3 */
+.page-3{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topic-1{
+    width: auto;
+    height: 200px;
+    text-align: center;
+}
+
+
+.topic-2{
+    width: auto;
+    height: 200px;
+    text-align: center;
+}
+
+.topic-3{
+    width: auto;
+    height: 200px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background-color: #efe9e4;
+    width: auto;
+    height: 200px;
+}
+
+.contact-me{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: #191919;
+    color: #efe9e4;
+    width: 200px; 
+    height: 30px; 
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-container{
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.contact{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact img{
+    transition: transform 03.s ease-in-out;
+}
+
+.contact img:hover{
+    transform: scale(1.2);
+}
+
