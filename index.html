@@ -109,6 +109,15 @@
                         <img src="/Pictures/github-logo.png" alt="GitHub" width="50px" height="50px">
                     </a>
                 </div>
+                <div class="contact feedback">
+                    <img src="/Pictures/feedback.png" alt="Feedback" width="50px" height="50px" id="feedback-btn">
+                </div>
+                <div id="feedback-popup" class="feedback-popup">
+                    <h2>Leave a Feedback</h2>
+                    <textarea id="feedback-text" placeholder="Write your feedback..."></textarea>
+                    <button onclick="submitFeedback()">Submit</button>
+                    <button onclick="closeFeedback()">Close</button>
+                    <ul id="feedback-list"></ul>
             </div>
         </footer>
     </body>

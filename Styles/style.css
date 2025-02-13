@@ -242,17 +242,21 @@ label {
 }
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
+    flex-direction: column;
     align-items: center; 
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
     background-color: #efe9e4;
     width: auto;
-    height: 200px;
+    height: 250px;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.contact-me{
+/* Contact Me Butonu */
+.contact-me {
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -264,10 +268,12 @@ footer{
     border-radius: 100px;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 180px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact-container{
+/* Contact Container */
+.contact-container {
     display: flex;
     gap: 20px; 
     justify-content: center;
@@ -275,20 +281,90 @@ footer{
     padding-top: 20px;
 }
 
-.contact{
+/* İkonlar */
+.contact {
     width: 50px;
     height: 50px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.contact img{
-    transition: transform 03.s ease-in-out;
+.contact img {
+    width: 50px;
+    height: 50px;
 }
 
-.contact img:hover{
+/* Hover Efekti: İkon Büyüme */
+.contact:hover {
     transform: scale(1.2);
 }
 
+/* FEEDBACK POPUP STİLİ */
+.feedback-popup {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.feedback-popup h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.feedback-popup textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #e88c97;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feedback-popup button:hover {
+    background: #c76c7b;
+}
+
+#feedback-list {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+#feedback-list li {
+    background: #f7f7f7;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#feedback-list li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#feedback-list li button:hover {
+    background: darkred;
+}
