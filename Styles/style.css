@@ -255,7 +255,6 @@ footer {
     padding-top: 20px;
 }
 
-/* Contact Me Butonu */
 .contact-me {
     display: flex;
     align-items: center; 
@@ -272,7 +271,6 @@ footer {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Contact Container */
 .contact-container {
     display: flex;
     gap: 20px; 
@@ -281,7 +279,7 @@ footer {
     padding-top: 20px;
 }
 
-/* İkonlar */
+
 .contact {
     width: 50px;
     height: 50px;
@@ -295,12 +293,11 @@ footer {
     height: 50px;
 }
 
-/* Hover Efekti: İkon Büyüme */
 .contact:hover {
     transform: scale(1.2);
 }
 
-/* FEEDBACK POPUP STİLİ */
+
 .feedback-popup {
     display: none;
     position: fixed;
